@@ -20,13 +20,11 @@ highlight ColoColumn ctermbg=0 guibg=lightgrey
 call plug#begin('~/local/share/nvim/plugged')
 
 " Temas
-"Plug 'joshdick/onedark.vim'
-Plug 'morhetz/gruvbox'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 " Visual
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
 
 " Modificacion
 Plug 'scrooloose/nerdtree'
@@ -35,12 +33,6 @@ Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 let mapleader = " "
-
-set background=dark
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
-
-
 
 nmap <F5> :source ~/.config/nvim/init.vim<CR>
 vmap <F5> :source ~/.config/nvim/init.vim<CR>
